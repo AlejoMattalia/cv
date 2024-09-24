@@ -29,7 +29,7 @@
             padding: 30px;
 
             @media (width < 550px) {
-                padding: 15px;
+                padding: 20px;
             }
 
             & .container-name {
