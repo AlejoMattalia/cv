@@ -10,16 +10,22 @@
       href="https://res.cloudinary.com/dl6igxwvo/image/upload/v1727059631/imagenmia_1_te4wti.jpg"
       type="image/jpg"
     />
+    <script src="main.js" defer></script>
   </head>
 
   <body>
     <section class="container">
+      <div class="container-buttons">
+        <button class="button" data-lang="en" id="buttonEn">English</button>
+        <button class="button" data-lang="es" id="buttonEs">Spanish</button>
+      </div>
+
       <section class="container-cv">
         <header class="container-header">
           <section class="container-name">
             <div>
               <h1>Alejo Mattalia</h1>
-              <p>Desarrollador FullStack</p>
+              <p id="title">Frontend Developer</p>
             </div>
 
             <div class="container-circle">
@@ -164,7 +170,7 @@
                 />
               </svg>
 
-              <p>27 de abril de 2004</p>
+              <p id="date">April 27, 2004</p>
             </div>
 
             <a
@@ -269,34 +275,38 @@
             </a>
           </section>
 
-          <p class="text-profile">
-            Desarrollador FullStack con formación en programación y experiencia
-            en aplicaciones web con React.js, Node.js, Next.js y Nest.js. He
-            trabajado en proyectos freelance y en equipo, donde he desarrollado
-            habilidades en resolución de problemas y creación de soluciones. Me
-            gusta mantenerme al día con las tendencias tecnológicas.
+          <p class="text-profile" id="description">
+            Frontend Developer with a background in programming and experience
+            in building web applications using React.js and Next.js. I have
+            worked on both freelance and team projects, where I developed
+            problem-solving skills and the ability to create intuitive user
+            interfaces. I also have knowledge of Node.js and Nest.js to
+            complement my frontend development. I enjoy staying up to date with
+            the latest technology trends.
           </p>
         </header>
 
         <main class="container-main">
           <div class="container-section">
-            <h3>Formación</h3>
+            <h3 id="titleEducation">Education</h3>
 
             <div class="data">
-              <p class="date">mar 2022 - dic 2023</p>
+              <p class="date" id="dateEducation">Mar 2022 - Dec 2023</p>
 
               <div class="section">
                 <div class="square"></div>
 
                 <div>
-                  <p class="title">Técnico Superior en Programación</p>
+                  <p class="title" id="titleTeclab">
+                    Higher Technician in Programming
+                  </p>
                   <p class="subtitle">TECLAB, ARGENTINA</p>
 
-                  <p class="text">
-                    Aprendí a programar en JavaScript, Java y Python en una
-                    carrera 100% online, con proyectos prácticos que me
-                    permitieron aplicar los conocimientos en situaciones reales,
-                    siempre con el apoyo de tutores y profesores.
+                  <p class="text" id="descriptionTeclab">
+                    I learned to program in JavaScript, Java, and Python through
+                    a 100% online degree program, with practical projects that
+                    allowed me to apply my knowledge to real-world situations,
+                    always supported by tutors and instructors.
                   </p>
                 </div>
               </div>
@@ -304,72 +314,91 @@
           </div>
 
           <div class="container-section" style="margin-top: 60px">
-            <h3>Experiencia</h3>
+            <h3 id="titleExperience">Experience</h3>
 
             <div class="data">
-              <p class="date">nov 2024 - presente</p>
+              <p class="date" id="dateMDabroad">june 2025 - present</p>
 
               <div class="section">
                 <div class="square"></div>
 
                 <div>
-                  <p class="title">Desarrollador Frontend</p>
+                  <p class="title" id="titleMDabroad">
+                    Frontend Software Engineer
+                  </p>
+                  <p class="subtitle">MDabroad, USA</p>
+
+                  <p class="text" id="textMDabroad">Soon</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="data">
+              <p class="date">nov 2024 - jun 2025</p>
+
+              <div class="section">
+                <div class="square"></div>
+
+                <div>
+                  <p class="title" id="titleByron">Frontend Developer</p>
                   <p class="subtitle">BYRON, ARGENTINA</p>
 
-                  <p class="text">
-                    Desarrollé la landing page y la aplicación de OrdenApp, una
-                    plataforma para restaurantes que incluye funcionalidades
-                    como gestión de menús con categorías y sugerencias, carta
-                    digital accesible mediante códigos QR, integración de pagos
-                    con Mercado Pago, análisis de ventas con reportes
-                    detallados, y gestión de mesas y organización del personal.
-                    Utilicé tecnologías como React.js, TypeScript, y MUI,
-                    destacando mi capacidad de trabajo en equipo, comunicación
-                    efectiva, y liderazgo en la coordinación del proyecto.
+                  <p class="text" id="textByron">
+                    I developed the landing page and application for OrdenApp, a
+                    platform for restaurants that includes features such as menu
+                    management with categories and suggestions, a digital menu
+                    accessible via QR codes, payment integration with Mercado
+                    Pago, sales analysis with detailed reports, and table and
+                    staff management. I used technologies like React.js,
+                    TypeScript, and MUI, highlighting my teamwork skills,
+                    effective communication, and leadership in coordinating the
+                    project.
                   </p>
                 </div>
               </div>
             </div>
 
             <div class="data" style="margin-top: 30px">
-              <p class="date">abr 2024 - nov 2024</p>
+              <p class="date" id="dateBeCode">apr 2024 - nov 2024</p>
 
               <div class="section">
                 <div class="square"></div>
 
                 <div>
-                  <p class="title">Desarrollador FullStack</p>
+                  <p class="title" id="titleBeCode">FullStack Developer</p>
                   <p class="subtitle">BECODE, COLOMBIA</p>
 
-                  <p class="text">
-                    He trabajado en el desarrollo del frontend de aplicaciones
-                    web y del backend de aplicaciones móviles, utilizando
-                    tecnologías como React y Node.js. Implementé la metodología
-                    Scrum, lo que me permitió trabajar de manera colaborativa en
-                    equipo y gestionar un grupo a mi cargo. Además, me enfoqué
-                    en capacitar a los miembros del equipo y presentar proyectos
-                    a clientes.
+                  <p class="text" id="textBeCode">
+                    I worked on the frontend development of web applications and
+                    the backend of mobile applications, using technologies such
+                    as React and Node.js. I implemented the Scrum methodology,
+                    which allowed me to collaborate effectively within a team
+                    and manage a group under my responsibility. Additionally, I
+                    focused on training team members and presenting projects to
+                    clients.
                   </p>
                 </div>
               </div>
             </div>
 
             <div class="data" style="margin-top: 30px">
-              <p class="date">ene 2023 - presente</p>
+              <p class="date" id="dateFreelance">jan 2023 - present</p>
               <div class="section">
                 <div class="square"></div>
 
                 <div>
-                  <p class="title">Desarrollador Freelance</p>
-                  <p class="subtitle">AUTÓNOMO, ARGENTINA</p>
+                  <p class="title" id="titleFreelance">Developer Freelance</p>
+                  <p class="subtitle" id="subtitleFreelance">
+                    FREELANCE, ARGENTINA
+                  </p>
 
-                  <p class="text">
-                    En mis trabajos freelance, he desarrollado aplicaciones web
-                    usando React.j y Node.js, trabajando directamente con
-                    clientes para definir y cumplir sus requerimientos. He
-                    manejado desde la creación de interfaces hasta la
-                    integración de pagos y chatbots de whatsapp, adaptándome a
-                    nuevas tecnologías y desafíos en cada proyecto.
+                  <p class="text" id="textFreelance">
+                    In my freelance work, I have developed web applications
+                    using React.js and Node.js, working directly with clients to
+                    define and meet their requirements. I have handled
+                    everything from creating user interfaces to integrating
+                    payment systems and WhatsApp chatbots, adapting to new
+                    technologies and challenges in each project.
                   </p>
                 </div>
               </div>
@@ -377,27 +406,27 @@
           </div>
 
           <div class="container-section" style="margin-top: 60px">
-            <h3>Cursos</h3>
+            <h3 id="titleCourse">Course</h3>
 
             <div class="data">
-              <p class="date">ene 2023 - may 2023</p>
+              <p class="date" id="dateCoder">Jan 2023 - May 2023</p>
 
               <div>
                 <div class="section">
                   <div class="square"></div>
 
                   <div>
-                    <p class="title">
-                      Carrera de Desarrollador Frontend con React js
+                    <p class="title" id="titleCoder">
+                      Frontend Developer Program with React js
                     </p>
                     <p class="subtitle">CODERHOUSE</p>
 
-                    <p class="text">
-                      Aaprendí a crear aplicaciones web usando HTML, CSS,
-                      JavaScript y React. El curso fue 100% online y práctico,
-                      con el acompañamiento constante de mentores que me guiaron
-                      en todo momento, ayudándome a aplicar lo aprendido de
-                      forma directa y concreta.
+                    <p class="text" id="textCoder">
+                      I learned to build web applications using HTML, CSS,
+                      JavaScript, and React. The course was 100% online and
+                      hands-on, with constant support from mentors who guided me
+                      throughout the process, helping me apply what I learned in
+                      a direct and practical way.
                     </p>
                   </div>
                 </div>
@@ -405,22 +434,24 @@
             </div>
 
             <div class="data" style="margin-top: 30px">
-              <p class="date">ago 2023 - dic 2023</p>
+              <p class="date" id="dateBootcamp">aug 2023 - dec 2023</p>
 
               <div>
                 <div class="section">
                   <div class="square"></div>
 
                   <div>
-                    <p class="title">Desarrollo Backend</p>
-                    <p class="subtitle">BOOTCAMP EMPRESA WEBEXPERTO</p>
+                    <p class="title" id="titleBootcamp">Backend Development</p>
+                    <p class="subtitle" id="subtitleBootcamp">
+                      WEBEXPERTO COMPANY BOOTCAMP
+                    </p>
 
-                    <p class="text">
-                      Hice el bootcamp de WebExperto, donde aprendí desarrollo
-                      web con HTML, CSS, JavaScript, React y backend con Ruby on
-                      Rails. El programa fue intensivo y práctico, enfocado en
-                      proyectos reales y con el apoyo de mentores, lo que me
-                      preparó para el mercado laboral como desarrollador web.
+                    <p class="text" id="textBootcamp">
+                      I completed the WebExperto bootcamp, where I learned
+                      backend development with Ruby on Rails and MySQL. The
+                      program was intensive and hands-on, focused on real-world
+                      projects and supported by mentors, which prepared me for
+                      the job market as a web developer.
                     </p>
                   </div>
                 </div>
@@ -429,7 +460,9 @@
           </div>
 
           <div class="container-section-list" style="margin-top: 60px">
-            <h3 style="width: 100%; max-width: 225px">Tecnologías</h3>
+            <h3 style="width: 100%; max-width: 225px" id="titleTechnologies">
+              Technologies
+            </h3>
 
             <div class="list">
               <div class="element">
@@ -459,6 +492,11 @@
 
               <div class="element">
                 <div class="square"></div>
+                <p>Vue.js</p>
+              </div>
+
+              <div class="element">
+                <div class="square"></div>
                 <p>React.js</p>
               </div>
 
@@ -469,7 +507,7 @@
 
               <div class="element">
                 <div class="square"></div>
-                <p>Astro</p>
+                <p>Astro.js</p>
               </div>
 
               <div class="element">
@@ -520,66 +558,70 @@
           </div>
 
           <div class="container-section-list" style="margin-top: 60px">
-            <h3 style="width: 100%; max-width: 225px">Aptitudes</h3>
+            <h3 style="width: 100%; max-width: 225px" id="titleSkills">
+              Skills
+            </h3>
 
             <div class="list">
               <div class="element">
                 <div class="square"></div>
-                <p>Desarrollo Frontend</p>
+                <p id="skillOne">Frontend Development</p>
               </div>
               <div class="element">
                 <div class="square"></div>
-                <p>Desarrollo Backend</p>
+                <p id="skillTwo">Backend Development</p>
               </div>
               <div class="element">
                 <div class="square"></div>
-                <p>Bases de datos</p>
+                <p id="skillThree">Databases</p>
               </div>
               <div class="element">
                 <div class="square"></div>
-                <p>metodologías ágiles</p>
+                <p id="skillFour">Agile methodologies</p>
               </div>
               <div class="element">
                 <div class="square"></div>
-                <p>Trabajo en equipo</p>
+                <p id="skillFive">Teamwork</p>
               </div>
               <div class="element">
                 <div class="square"></div>
-                <p>Liderazgo</p>
+                <p id="skillSix">leadership</p>
               </div>
               <div class="element">
                 <div class="square"></div>
-                <p>Resolución de problemas</p>
+                <p id="skillSeven">Problem-solving</p>
               </div>
               <div class="element">
                 <div class="square"></div>
-                <p>Presentación de proyectos</p>
+                <p id="skillEight">Project presentation</p>
               </div>
               <div class="element">
                 <div class="square"></div>
-                <p>Adaptabilidad y aprendizaje rápido</p>
+                <p id="skillNine">Adaptability and rapid learning</p>
               </div>
               <div class="element">
                 <div class="square"></div>
-                <p>optimización y escalabilidad</p>
+                <p id="skillTen">Optimization and scalability</p>
               </div>
             </div>
           </div>
 
           <div class="container-section-list" style="margin-top: 60px">
-            <h3 style="width: 100%; max-width: 225px">Idiomas</h3>
+            <h3 style="width: 100%; max-width: 225px" id="titleLanguages">
+              Languages
+            </h3>
 
             <div class="list">
               <div class="element">
                 <div class="square"></div>
-                <p style="font-size: 16px; color: black">
-                  Español: <span>Nativo</span>
+                <p style="font-size: 16px; color: black" id="languageOne">
+                  Spanish: Native
                 </p>
               </div>
               <div class="element">
                 <div class="square"></div>
-                <p style="font-size: 16px; color: black">
-                  Inglés: <span>Intermedio</span>
+                <p style="font-size: 16px; color: black" id="languageTwo">
+                  English: Intermediate
                 </p>
               </div>
             </div>
